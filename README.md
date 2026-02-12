@@ -4,7 +4,7 @@
 Koketso Llale AI Resume is a Retrieval-Augmented Generation (RAG) chatbot built using **Azure OpenAI** and **Azure AI Search**.  
 It provides accurate, document-based answers to related to my Curriculum Vitae. User can search for my academics, work experience, skills, and/or projects.
 
-The purpose of this project is to demonstrates **enterprise-grade Generative AI architecture on Azure**, therefore it is not deployed.
+The purpose of this project is to demonstrates **enterprise-grade Generative AI architecture on Azure**.
 
 ---
 
@@ -49,14 +49,12 @@ AI Response
 ## ⚙️ Setup Instructions
 
 ### Prerequisites
-- Python 3.9+
+- Python
 - Azure OpenAI resource
 - Azure AI Search index
 
 ### How to run
-This project is for practical use of RAG. You will need Azure account, on Azure portal:   
-- Create Azure OpenAI and Azure AI Serach services (Region must be the same for both services)
-- Get both endpoints(URLs) and keys for both services
+- First get endpoints(URLs) and keys for both services
 - Copy and paste them in .env accordingly
   
 ```bash
@@ -68,34 +66,35 @@ streamlit run app.py
 
 ---
 
-# Architecture Diagram (Portfolio Version)
+# Architecture Diagram
 
 +-------------+
 | User |
 +-------------+
-|
-v
+        |
+        v
 +-------------------+
 | Streamlit UI |
 | (App Service) |
 +-------------------+
-|
-v
+        |
+        v
 +-------------------+
 | Azure AI Search |
 | (Document Index) |
 +-------------------+
-|
-v
+        |
+        v
 +-------------------+
 | Azure OpenAI GPT |
 | (RAG Response) |
 +-------------------+
-|
-v
+        |
+        v
 +-------------+
 | AI Answer |
 +-------------+
+
 
 
 
