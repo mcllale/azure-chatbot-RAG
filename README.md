@@ -30,19 +30,19 @@ The purpose of this project is to demonstrates **enterprise-grade Generative AI 
 ---
 
 ## 🏗️ System Architecture
-User
-│
-▼
-Streamlit UI
-│
-▼
-Azure AI Search ──► Relevant Documents
-│
-▼
-Azure OpenAI (GPT)
-│
-▼
-AI Response
+User    
+│    
+▼    
+Streamlit UI    
+│    
+▼    
+Azure AI Search ──► Relevant Documents    
+│    
+▼    
+Azure OpenAI (GPT)    
+│    
+▼    
+AI Response    
 
 ---
 
@@ -96,5 +96,6 @@ v
 +-------------+
 | AI Answer |
 +-------------+
+
 
 
