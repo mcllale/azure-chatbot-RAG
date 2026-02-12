@@ -1,10 +1,10 @@
-# 🎓 Student Helpdesk AI (Azure RAG Chatbot)
+# 🎓 Koketso Llale AI chatbot (Azure RAG Chatbot)
 
 ## 📌 Overview
 Koketso Llale AI Resume is a Retrieval-Augmented Generation (RAG) chatbot built using **Azure OpenAI** and **Azure AI Search**.  
 It provides accurate, document-based answers to related to my Curriculum Vitae. User can search for my academics, work experience, skills, and/or projects.
 
-The purpose of this project is to demonstrates **enterprise-grade Generative AI architecture on Azure**.
+The purpose of this project is to demonstrates **enterprise-grade Generative AI architecture on Azure**, therefore it is not deployed.
 
 ---
 
@@ -24,7 +24,9 @@ The purpose of this project is to demonstrates **enterprise-grade Generative AI 
 - Streamlit dashboard UI
 - Secure configuration using environment variables
 - Cloud deployment on Azure
-
+- 
+### Streamlit User Interface
+![alt text](https://github.com/mcllale/azure-chatbot-RAG/images/capture.png "Streamlit User Interface")
 ---
 
 ## 🏗️ System Architecture
@@ -51,11 +53,18 @@ AI Response
 - Azure OpenAI resource
 - Azure AI Search index
 
-### Installation
+### How to run
+This project is for practical use of RAG. You will need Azure account, on Azure portal:   
+- Create Azure OpenAI and Azure AI Serach services (Region must be the same for both services)
+- Get both endpoints(URLs) and keys for both services
+- Copy and paste them in .env accordingly
+  
 ```bash
-git clone https://github.com/mcllale/azure_chatbot.git
-cd azure_chatbot
+git clone https://github.com/mcllale/azure-chatbot-RAG.git
+cd azure-chatbot-RAG
 pip install -r requirements.txt
+python upload_documents.py
+streamlit run app.py
 
 ---
 
@@ -87,4 +96,5 @@ v
 +-------------+
 | AI Answer |
 +-------------+
+
 
